@@ -27,25 +27,50 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-* add a transportation activity!
-* allows user to input mode of transportation
-* allows user to input start and endpoint of their travel 
-* calculates carbon footprint of an individual activity
-* sum all of the activies up at the end of the day
-* give a rating - Red/Yellow (warning) vs. Green (encouraging)
-* delete and activity if needed
-* see activities for the day
+* Home activity with bottom navigation menu
+   * Include buttons to other fragments (home, add, detailed list, info)
+   * Profile fragment is default view
+   
+* User can see their carbon score for the day
+   * Profile fragment
+   * ImageView graphic denoting qualtitative use of carbon -> color/emoji (green/happy, yellow/neutral, red/angry)
+   * TextView over the graphic denoting quantitative use (need more research on carbon use)
+   * Sum up scores for all posts
+   
+* Add a transportation post
+   * Creation Activity
+      * EditText for user to enter title of post
+      * Buttons to choose mode of transportation (walk, bike, carpool/rideshare, electric car, gas car, public transport)
+         * Once clicked, go to MapView activity
+         * Check that a title was entered
+   * MapView Activity (need more research on GoogleMap API)
+      * Enter start and end
+      * Button to confirm
+   * Calculate "carbon footprint" of an individual post (need more research on average carbon consumption for each mode of transportation)
+   
+* See a daily log of posts
+   * Stream fragment
+   * RecyclerView
+   * User can delete an activity
 
 **Optional Nice-to-have Stories**
 
-* Recommendations (transportation)
-* Encourage carpool
-* Encouraging walking for low mileage
-* Notifications pop up at 4 pm?
-* “Share” with friends
-* monthly/yearly progress
-* click into an activity and it gives you additional information
+* See detailed overview of post before logging the activity (p1)
+   * Detail frgament - confirmation screen
+   * See title, mode of transportation, start, end, distance, rating for activity
+   * Confirm and cancel buttons
+* Recommendations (p1)
+   * General recommendation- if user is in red, recommend walking, carpooling, public transportation
+   * NOT specific alternatives
+* Notifications (p2)
+   * Reminder to log
+   * encouraging/warning messages 
+* “Share” with friends (p3)
+* monthly/yearly progress (p3)
+   * Calendar fragment
+   * Detailed views of day
+   * Trend line
+* Detailed view of activity from list view (p2)
 
 
 ### 2. Screen Archetypes
@@ -88,7 +113,7 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
 
 
 ## Wireframes
-![](https://i.imgur.com/Y7eyWOL.jpg)
+![](https://scontent.xx.fbcdn.net/v/t1.15752-9/65947598_503561243782278_7727859721398386688_n.jpg?_nc_cat=100&_nc_oc=AQkoTWIv1KSWkLWyX5goj4OQYhvRUmwg-FK6qOahAMGB3iRW_gpDPST9yUImVRXfGb8gqPDgHuqj3vPWw3YNGN97&_nc_ht=scontent.xx&oh=de49521c13051b3a039d4c97fd60fde6&oe=5DB00850)
 
 ### [BONUS] Digital Wireframes & Mockups
 
