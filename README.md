@@ -14,7 +14,6 @@ Group Project
 App for user's to track their daily/monthly/yearly carbon footprint relating to what modes of transportation they use per day. Users will enter in where they travel and how they travel, and at the end of the day, receive a rating determing how "eco-friendly" they were to the earth that day. :)
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Lifestyle
 - **Mobile**: The app being mobile makes it easy to log modes of transportation and keep track of their daily carbon footprint
 - **Story:** We care about the earth, and we hope that this app inspires people to be more aware and concious about their daily carbon footprint. We want this app to be as simple and user friendly as possible, so even the laziest people can use it easily. 
@@ -27,38 +26,39 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* Home activity with bottom navigation menu
+* Home activity with bottom navigation menu (Alejandro)
    * Include buttons to other fragments (home, add, detailed list, info)
    * Profile fragment is default view
    
-* User can see their carbon score for the day
+* User can see their carbon score for the day (Lisa)
    * Profile fragment
    * ImageView graphic denoting qualtitative use of carbon -> color/emoji (green/happy, yellow/neutral, red/angry)
    * TextView over the graphic denoting quantitative use (need more research on carbon use)
    * Sum up scores for all posts
    
 * Add a transportation post
-   * Creation Activity
-      * EditText for user to enter title of post
+   * Creation Activity (Jennifer)
       * Buttons to choose mode of transportation (walk, bike, carpool/rideshare, electric car, gas car, public transport)
-         * Once clicked, go to MapView activity
+         * Once clicked, start MapView activity for result
          * Check that a title was entered
-   * MapView Activity (need more research on GoogleMap API)
-      * Enter start and end
-      * Button to confirm
-   * Calculate "carbon footprint" of an individual post (need more research on average carbon consumption for each mode of transportation)
-   
-* See a daily log of posts
+   * MapView Activity (need more research on GoogleMap API) - (Alejandro)
+      * Enter start and end points
+      * Button to confirm - go to confirmation screen
+   * Creation Activity - (Jennifer & Lisa)
+      * Confirmation Screen
+      * EditText for user to enter title of post
+      * TextView to see mode of transport
+      * TextView
+      * Calculate "carbon footprint" of an individual post (need more research on average carbon consumption for each mode of transportation) - (Lisa)
+      * Confirmation and Cancellation buttons
+  
+* See a daily log of posts (Alejandro)
    * Stream fragment
    * RecyclerView
    * User can delete an activity
 
 **Optional Nice-to-have Stories**
 
-* See detailed overview of post before logging the activity (p1)
-   * Detail frgament - confirmation screen
-   * See title, mode of transportation, start, end, distance, rating for activity
-   * Confirm and cancel buttons
 * Recommendations (p1)
    * General recommendation- if user is in red, recommend walking, carpooling, public transportation
    * NOT specific alternatives
@@ -113,7 +113,7 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
 
 
 ## Wireframes
-![](https://scontent.xx.fbcdn.net/v/t1.15752-9/65947598_503561243782278_7727859721398386688_n.jpg?_nc_cat=100&_nc_oc=AQkoTWIv1KSWkLWyX5goj4OQYhvRUmwg-FK6qOahAMGB3iRW_gpDPST9yUImVRXfGb8gqPDgHuqj3vPWw3YNGN97&_nc_ht=scontent.xx&oh=de49521c13051b3a039d4c97fd60fde6&oe=5DB00850)
+![](https://scontent.xx.fbcdn.net/v/t1.15752-9/67205101_1340408479433581_5902823603593805824_n.jpg?_nc_cat=107&_nc_oc=AQmqqQYQ62pOpdhM2MAFlSZjFBCA_UMvKn33G9w0ze98iST2JgnWEy43uVjFwyyqQ9TaialSkq-QI0KsNepiKfQp&_nc_ht=scontent.xx&oh=91d9c37bb4077ccc0289b84d518e3eaf&oe=5DB723B8)
 
 ### [BONUS] Digital Wireframes & Mockups
 
