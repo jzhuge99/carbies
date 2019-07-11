@@ -120,10 +120,30 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+Post(Carbie)
+
+Property | Type | Description 
+| -------- | ---- | ----------- |
+| objectID | String |unique id for the post |
+| title | String | name or short description of what the carbie is (ie trip to work) |
+| createdAt| DateTime | time when post was created | 
+| start | LatLng| start point of a carbie (ie 123 Home Way) |
+| end | LatLng | end point of a carbie (ie 456 Work Way) |
+| distance | Integer | distance of trip |
+| author | Pointer to user | user who is entering the carbie |
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Login screen
+  - (GET) Query logged in user object
+  - (Create) create a new user
+- Confirmation screen
+  - (Create/POST) Create a new carbie/post
+- Daily Log Screen (feed)
+  - (Read/GET) Query all posts where user is author
+  - (Delete) Delete existing post/carbie
+- Google Maps Screen
+  - Utilizing Google Maps API to enter start and end points for a trip, and get distance.
+  - https://developers.google.com/maps/documentation/geocoding/intro
+  - More research necessary on using API and making network requests
