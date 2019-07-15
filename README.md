@@ -134,6 +134,14 @@ Property | Type | Description
 | distance | Integer | distance of trip |
 | author | Pointer to user | user who is entering the carbie |
 
+User
+
+Property | Type | Description 
+| -------- | ---- | ----------- |
+| userId | String |unique id for the user (randomly generated)|
+| username | String |user's self made name |
+| password | String | user's self made log in password|
+
 ### Networking
 - Login screen
   - (GET) Query logged in user object
