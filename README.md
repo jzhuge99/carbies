@@ -31,7 +31,7 @@ App for user's to track their daily/monthly/yearly carbon footprint relating to 
    * Profile fragment is default view
    
 * User can see their carbon score for the day (Lisa)
-   * Profile fragment
+   * CurrentScore fragment
    * ImageView graphic denoting qualtitative use of carbon -> color/emoji (green/happy, yellow/neutral, red/angry)
    * TextView over the graphic denoting quantitative use (need more research on carbon use)
    * Sum up scores for all posts
